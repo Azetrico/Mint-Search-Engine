@@ -5,3 +5,8 @@
     overflow: hidden;
     padding-top: 56.25%;
 }
+
+.gs-webResult {
+    border: 1px solid #eee;
+    padding: 1em;
+}
