@@ -1,4 +1,4 @@
-var sul = 'https://www.googleapis.com/customsearch/v1?q=' + new URLSearchParams(window.location.search).getAll('q') + '&cx=004515914683076720641%3Auhie5a7ygv4&key=AIzaSyD68PxO_gYStrq9WEHdxnwO_R56Wly1Nbs&num=100'
+var sul = 'https://www.googleapis.com/customsearch/v1?q=' + new URLSearchParams(window.location.search).getAll('q') + '&cx=004515914683076720641%3Auhie5a7ygv4&key=AIzaSyD68PxO_gYStrq9WEHdxnwO_R56Wly1Nbs'
 
 function loadJSON(path, success, error)
 {
