@@ -30,7 +30,9 @@ loadJSON(sul,
 function getSearchData(data) {
     var htmlse = ""
     data['items'].forEach(function(element){
-        htmlse += '<div class="card w-75"><div class="card-body"><h5 class="card-title">' + element['title'] + '</h5><p class="card-text">' + element['snippet'] + '</p> <a href="' + element['link'] + '">' + element['displayLink'] + '</a></div> </div>'
+      if (dara['kind'] == "customsearch#result") {
+        htmlse += '<div class="card w-75"><div class="card-body"><h5 class="card-title">' + element['title'] + '</h5><a href="' + element['link'] + '">' + element['displayLink'] + '</a><p class="card-text">' + element['snippet'] + '</p></div> </div>'
+      }
     });
     document.getElementById("content").innerHTML = htmlse
 }
