@@ -31,7 +31,7 @@ function getSearchData(data) {
     var htmlse = ""
     data['items'].forEach(function(element){
       if (element['kind'] == "customsearch#result") {
-        htmlse += '<div class="card w-75"><div class="card-body"><h5 class="card-title">' + element['title'] + '</h5><a href="' + element['link'] + '">' + element['displayLink'] + '</a><p class="card-text">' + element['snippet'] + '</p></div> </div>'
+        htmlse += '<div class="card w-100"><div class="card-body"><h5 class="card-title">' + element['title'] + '</h5><a href="' + element['link'] + '">' + element['displayLink'] + '</a><p class="card-text">' + element['snippet'] + '</p></div> </div>'
       }
     });
     document.getElementById("content").innerHTML = htmlse
