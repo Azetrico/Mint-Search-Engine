@@ -19,7 +19,7 @@ function loadJSON(path, success, error)
     xhr.send();
 }
 
-alert(sul)
+
 loadJSON(sul,
          function(data) {
            getSearchData(data)
